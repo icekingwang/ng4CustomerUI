@@ -1,0 +1,35 @@
+.ui-widget {
+  font-family:  $fontFamily;
+  font-size: $fontSize;
+
+  input, select, textarea, button {
+    font-family:  $fontFamily;
+    font-size: $fontSize;
+  }
+
+  :active {
+    outline: none;
+  }
+}
+
+.ui-widget-content {
+  border: $contentBorderWidth solid $contentBorderColor;
+  background: $contentBgColor;
+  color: $contentTextColor;
+
+  a {
+    color: $contentTextColor;
+  }
+}
+
+.ui-state-default {
+  border: $stateDefaultBorderWidth solid $stateDefaultBorderColor;
+  background: $stateDefaultBgColor;
+  color: $stateDefaultTextColor;
+
+  a {
+    color: $stateDefaultTextColor ;
+  }
+}
+
+.ui-corner-all { -moz-border-radius: $borderRadius; -webkit-border-radius: $borderRadius; border-radius: $borderRadius; }

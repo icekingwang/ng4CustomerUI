@@ -1,31 +1,27 @@
+$fontFamily:  "Roboto", "Trebuchet MS", Arial, Helvetica, sans-serif;
+$fontSize: 1em;
+$borderRadius: 3px;
+
+//Content
+$contentBorderWidth: 1px;
+$contentBorderColor: #D5D5D5;
+$contentBgColor: #ffffff;
+$contentTextColor: #222222;
+
+//Default State
+$stateDefaultBorderWidth: 1px;
+$stateDefaultBorderColor: #d6d6d6;
+$stateDefaultBgColor: #ffffff;
+$stateDefaultTextColor: #555555;
+
+
+@import "../_theme.scss";
+
 /*blockui*/
 .ui-widget-overlay {
   background: #666666;
   opacity: .50;
   filter: Alpha(Opacity=50);
-}
-/* Panel */
-.ui-panel.ui-widget {
-  padding: 0;
-
-  .ui-panel-titlebar.ui-corner-all {
-    -moz-border-radius-bottom-left: 0;
-    -webkit-border-bottom-left-radius: 0;
-    border-bottom-left-radius: 0;
-    -moz-border-radius-bottom-right: 0;
-    -webkit-border-bottom-right-radius: 0;
-    border-bottom-right-radius: 0;
-  }
-
-  .ui-panel-titlebar {
-    border-width: 0 0 1px 0;
-  }
-
-  .ui-panel-titlebar-icon span {
-    position: relative;
-    top: 1px;
-  }
-
 }
 
 body .ui-widget,
@@ -70,4 +66,28 @@ body .ui-widget input, body .ui-widget select, body .ui-widget textarea, body .u
   background: -o-linear-gradient(top, #f6f7f9 0%,#ebedf0 100%); /* Opera11.10+ */
   background: -ms-linear-gradient(top, #f6f7f9 0%,#ebedf0 100%); /* IE10+ */
   background: linear-gradient(to bottom, #f6f7f9 0%,#ebedf0 100%); /* W3C */
+}
+
+/* Panel */
+.ui-panel.ui-widget {
+  padding: 0;
+
+  .ui-panel-titlebar.ui-corner-all {
+    -moz-border-radius-bottom-left: 0;
+    -webkit-border-bottom-left-radius: 0;
+    border-bottom-left-radius: 0;
+    -moz-border-radius-bottom-right: 0;
+    -webkit-border-bottom-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  .ui-panel-titlebar {
+    border-width: 0 0 1px 0;
+  }
+
+  .ui-panel-titlebar-icon span {
+    position: relative;
+    top: 1px;
+  }
+
 }
