@@ -80,3 +80,4 @@ export class Panel implements BlockableUI{
     event.preventDefault();
   }
 }
+//TODO @Output() 输出属性还不理解
