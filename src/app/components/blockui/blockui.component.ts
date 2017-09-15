@@ -10,7 +10,6 @@ import {BlockableUI} from "../common/BlockableUI";
 </div>
 
 `,
-  styleUrls: ['./blockui.component.css'],
   providers:[DomHandler]
 })
 export class BlockuiComponent implements AfterViewInit,OnInit {

@@ -4,7 +4,6 @@ import {trigger,state,style,transition,animate} from '@angular/animations';
 
 @Component({
     selector:'p-panel',
-    styleUrls:['./panel.css'],
     template:`<div [ngClass]="'ui-panel ui-widget ui-widget-content ui-corner-all'" [style]="style" [class]="styleClass">
                   <div class="ui-panel-titlebar ui-widget-header ui-helper-clearfix ui-corner-all">
                     <span class="ui-panel-title" *ngIf="header">{{header}}</span>
