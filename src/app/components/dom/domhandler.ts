@@ -3,12 +3,24 @@ import {Injectable, ElementRef} from "@angular/core";
 export class DomHandler {
     public static index:number = 1000;
 
-    public addMultipleClasses(element:any,classes:string):void{
-        if(element.classlist){
+  public addMultipleClasses(element: any, className: string): void {
+    if (element.classList) {
+      let styles: string[] = className.split(' ');
+      for (let i = 0; i < styles.length; i++) {
+        element.classList.add(styles[i]);
+      }
 
-        }
-        element.classlist+=classes.split(',');
     }
+    else {
+      let styles: string[] = className.split(' ');
+      for (let i = 0; i < styles.length; i++) {
+        element.className += ' ' + styles[i];
+      }
+    }
+  }
 
+  public findSingle(element:any,selector:string):any{
+    return element.querySelector(selector);
+  }
 
 }
