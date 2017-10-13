@@ -1,0 +1,13 @@
+.ui-splitbutton {
+  position: relative;
+  display: inline-block;
+  zoom: 1;
+}
+
+.ui-splitbutton .ui-button.ui-splitbutton-menubutton {
+  width: 2em;
+}
+
+.ui-splitbutton.ui-state-disabled button {
+  cursor: default;
+}

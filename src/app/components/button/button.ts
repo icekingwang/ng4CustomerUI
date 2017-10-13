@@ -12,7 +12,7 @@ export class Button implements AfterViewInit,OnDestroy{
   }
 
   @Input() iconPos:string = "left";
-  @Input() conerClassStyle:string = "ui-corner-all";
+  @Input() cornerClassStyle:string = "ui-corner-all";
   public _icon:string;
   public _label:string;
   public initialized:boolean;
@@ -61,7 +61,7 @@ export class Button implements AfterViewInit,OnDestroy{
   }
 
   getStyleClasses():string {
-    let styleClass="ui-button ui-widget ui-default-state " + this.conerClassStyle;
+    let styleClass="ui-button ui-widget ui-default-state " + this.cornerClassStyle;
     if(this.icon){
         if(this.label!=null&&this.label!=undefined){
            styleClass+=this.iconPos ==="left"?" ui-button-text-icon-left":" ui-button-text-icon-right";
