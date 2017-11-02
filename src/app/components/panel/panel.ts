@@ -1,4 +1,7 @@
-import {Component, ElementRef, Input} from "@angular/core";
+import {
+  Component, ElementRef, Input, OnInit, OnChanges, DoCheck, AfterContentInit,
+  AfterContentChecked, AfterViewInit, AfterViewChecked, OnDestroy, SimpleChanges
+} from "@angular/core";
 import {BlockableUI} from "../common/blockableui";
 import {trigger,state,style,transition,animate} from '@angular/animations';
 
@@ -39,7 +42,10 @@ import {trigger,state,style,transition,animate} from '@angular/animations';
     ])
   ]
 })
-export class Panel implements BlockableUI{
+export class Panel implements BlockableUI,OnChanges,OnInit,DoCheck,
+                                          AfterContentInit,AfterContentChecked,
+                                          AfterViewInit,AfterViewChecked,OnDestroy
+{
 
   @Input() toggleable:boolean;
 
@@ -58,7 +64,40 @@ export class Panel implements BlockableUI{
   public animating:boolean;
 
   constructor(private el:ElementRef){
+      console.log("constructor构造函数。")
+  }
 
+
+  ngOnChanges(changes: SimpleChanges): void {
+    console.log("ng生命周期接口1 OnChanges。。。。。。。。。")
+  }
+
+  ngOnInit(): void {
+    console.log('ng生命周期接口2 OnInit。。。。。。。。。。。')
+  }
+
+  ngDoCheck(): void {
+    console.log("ng生命周期接口3 DoCheck。。。。。")
+  }
+
+  ngOnDestroy(): void {
+
+  }
+
+  ngAfterContentInit(): void {
+    console.log("ng生命周期接口4 OnAfterContentInit。。。。。")
+  }
+
+  ngAfterContentChecked(): void {
+    console.log('ng生命周期接口5 OnAfterContentChecked。。。。。。。')
+  }
+
+  ngAfterViewInit(): void {
+    console.log('ng生命周期接口6 OnAfterViewInit。。。。。。。。。。')
+  }
+
+  ngAfterViewChecked(): void {
+    console.log('ng生命周期接口7 OnAfterViewCheck。。。。。。。。。')
   }
 
   getBlockableElement():HTMLElement{
