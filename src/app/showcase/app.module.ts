@@ -6,6 +6,8 @@ import { BlockuiComponent } from '../components/blockui/blockui.component';
 import {Panel} from "../components/panel/panel";
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {Button} from "../components/button/button";
+import {RouterModule} from "@angular/router";
+import {appRoutes} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +18,8 @@ import {Button} from "../components/button/button";
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    RouterModule.forRoot(appRoutes)
   ],
   providers: [],
   bootstrap: [AppComponent]

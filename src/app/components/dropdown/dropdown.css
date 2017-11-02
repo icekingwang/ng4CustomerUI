@@ -1,0 +1,16 @@
+.ui-dropdown {
+  display:inline-block;
+  position:relative;
+  vertical-align: middle;
+  cursor:pointer;
+}
+
+.ui-dropdown .ui-dropdown-label {
+  display:block;
+  padding-left:1.5em;
+  font-weight:normal;
+  white-space:nowrap;
+  width:100%;
+  border:none;
+  overflow: hidden;
+}

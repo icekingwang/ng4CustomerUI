@@ -1,3 +1,42 @@
+.ui-widget, .ui-widget * {
+  box-sizing:border-box
+}
+
+.ui-helper-hidden {
+  display:none
+}
+
+.ui-helper-hidden-accessible{
+  clip:rect(0,0,0,0);
+  border:0;
+  width: 1px;
+  height:1px;
+  margin:-1px;
+  overflow: hidden;
+  padding:0;
+  position:absolute;
+}
+
+.ui-helper-hidden-accessible input,
+.ui-helper-hidden-accessible select {
+  transform:scale(0)
+}
+
+/*.ui-helper-reset {*/
+  /*padding:0;*/
+  /*margin:0;*/
+  /*border:0;*/
+  /*outline:0;*/
+  /*text-decoration:none;*/
+  /*list-style:none;*/
+  /*line-height:1.3px;*/
+  /*font-size:100%;*/
+/*}*/
+
+
+
+
+
 /*//p-splitButton*/
 .ui-shadow {
   -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.3);
