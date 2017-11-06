@@ -32,9 +32,6 @@
   }
 }
 
-.ui-corner-all { -moz-border-radius: $borderRadius; -webkit-border-radius: $borderRadius; border-radius: $borderRadius; }
-
-
 ///* Menus */ p-splitButton
 .ui-menu,
 .ui-menu .ui-menu-child {
@@ -66,3 +63,33 @@
     }
   }
 }
+
+/* Forms */
+.ui-inputtext {
+  background: $inputBgColor;
+  color: $inputTextColor;
+}
+
+.ui-inputtext:enabled:hover {
+  border-color: $stateHoverBorderColor;
+}
+
+.ui-inputtext.ui-state-focus,
+.ui-inputtext:focus {
+  outline: 0 none;
+  border-color: $stateFocusBorderColor;
+  -moz-box-shadow: 0px 0px 5px $stateFocusBorderColor;
+  -webkit-box-shadow: 0px 0px 5px $stateFocusBorderColor;
+  box-shadow: 0px 0px 5px $stateFocusBorderColor;
+}
+
+/* Cornering */
+.ui-corner-tl { -moz-border-radius-topleft: $borderRadius; -webkit-border-top-left-radius: $borderRadius; border-top-left-radius: $borderRadius; }
+.ui-corner-tr { -moz-border-radius-topright: $borderRadius; -webkit-border-top-right-radius: $borderRadius; border-top-right-radius: $borderRadius; }
+.ui-corner-bl { -moz-border-radius-bottomleft: $borderRadius; -webkit-border-bottom-left-radius: $borderRadius; border-bottom-left-radius: $borderRadius; }
+.ui-corner-br { -moz-border-radius-bottomright: $borderRadius; -webkit-border-bottom-right-radius: $borderRadius; border-bottom-right-radius: $borderRadius; }
+.ui-corner-top { -moz-border-radius-topleft: $borderRadius; -webkit-border-top-left-radius: $borderRadius; border-top-left-radius: $borderRadius; -moz-border-radius-topright: $borderRadius; -webkit-border-top-right-radius: $borderRadius; border-top-right-radius: $borderRadius; }
+.ui-corner-bottom { -moz-border-radius-bottomleft: $borderRadius; -webkit-border-bottom-left-radius: $borderRadius; border-bottom-left-radius: $borderRadius; -moz-border-radius-bottomright: $borderRadius; -webkit-border-bottom-right-radius: $borderRadius; border-bottom-right-radius: $borderRadius; }
+.ui-corner-right {  -moz-border-radius-topright: $borderRadius; -webkit-border-top-right-radius: $borderRadius; border-top-right-radius: $borderRadius; -moz-border-radius-bottomright: $borderRadius; -webkit-border-bottom-right-radius: $borderRadius; border-bottom-right-radius: $borderRadius; }
+.ui-corner-left { -moz-border-radius-topleft: $borderRadius; -webkit-border-top-left-radius: $borderRadius; border-top-left-radius: $borderRadius; -moz-border-radius-bottomleft: $borderRadius; -webkit-border-bottom-left-radius: $borderRadius; border-bottom-left-radius: $borderRadius; }
+.ui-corner-all { -moz-border-radius: $borderRadius; -webkit-border-radius: $borderRadius; border-radius: $borderRadius; }

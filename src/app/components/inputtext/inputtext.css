@@ -1,0 +1,6 @@
+.ui-inputtext {
+  margin:0;
+  padding: .25em;
+  outline: medium none;/*在chrome中，前端开发写的文本框标签后可以看到有边框，去除边框的方法*/
+  font-weight: normal;
+}
