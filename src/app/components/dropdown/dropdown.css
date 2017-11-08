@@ -5,8 +5,27 @@
   cursor:pointer;
 }
 
+.ui-dropdown .ui-dropdown-trigger {
+  border-top:none;
+  border-bottom:none;
+  border-right:none;
+  height:100%;
+  width:1.5em;
+  position:absolute;
+  top:0;
+  right:0;
+  padding:0 .25em;
+  cursor:pointer;
+}
+
+.ui-dropdown .ui-dropdown-trigger .fa {
+  margin-top: .3em;
+  margin-left: -.125em;
+}
+
 .ui-dropdown .ui-dropdown-label {
   display:block;
+
   padding-left:1.5em;
   font-weight:normal;
   white-space:nowrap;
